@@ -1,0 +1,1 @@
+console.log('Thx God <3')
