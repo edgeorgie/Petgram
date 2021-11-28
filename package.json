@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack server --mode development"
+    "vercel-build": "npm run build",
+    "dev": "webpack server --mode development",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "html-webpack-plugin": "^5.5.0",
+    "standard": "^16.0.4",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
@@ -32,5 +35,13 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "extends": ["./node_modules/standard/eslintrc.json"]
   }
 }
