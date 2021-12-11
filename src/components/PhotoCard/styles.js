@@ -24,15 +24,3 @@ export const Img = styled.img`
   top: 0;
   width: 100%;
 `
-
-export const Button = styled.button`
-  background: transparent;
-  border: none;
-  padding-top: 8px;
-  display: flex;
-  align-items: center;
-
-  & svg {
-    margin-right: 8px;
-  }
-`

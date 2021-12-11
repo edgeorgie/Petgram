@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "vercel-build": "npm run build",
-    "dev": "webpack server --mode development",
+    "dev": "webpack server --mode development --history-api-fallback",
     "lint": "standard",
     "lint-fix": "standard --fix"
   },
@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.5",
+    "@reach/router": "^1.3.4",
     "graphql": "^16.0.1",
     "intersection-observer": "^0.12.0",
     "react": "^17.0.2",
