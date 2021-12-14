@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "serve:dev": "webpack --mode development && npx serve dist -s",
     "vercel-build": "npm run build",
     "dev": "webpack server --mode development --history-api-fallback",
     "lint": "standard",
@@ -40,6 +41,7 @@
     "intersection-observer": "^0.12.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.3"
   },
