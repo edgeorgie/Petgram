@@ -8,6 +8,7 @@
     "serve:dev": "webpack --mode development && npx serve dist -s",
     "vercel-build": "npm run build",
     "dev": "webpack server --mode development --history-api-fallback",
+    "test": "cypress open",
     "lint": "standard",
     "lint-fix": "standard --fix"
   },
@@ -28,6 +29,7 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
+    "cypress": "^9.1.1",
     "html-webpack-plugin": "^5.5.0",
     "standard": "^16.0.4",
     "webpack": "^5.64.4",
